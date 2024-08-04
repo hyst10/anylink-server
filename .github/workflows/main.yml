@@ -22,7 +22,7 @@ jobs:
       run: |
         #go env -w CGO_ENABLED=0 GOOS=linux GOARCH=amd64
         go build -ldflags "-s -w" -o main.exe main.go
-        verl=$(PWD)
+        verl=$(pwd)
         echo "查找到路径 $verl"
         ver=$(find . -name *.exe)
         echo "查找到的apk $ver"
