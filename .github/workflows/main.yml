@@ -22,12 +22,12 @@ jobs:
       run: 
         #go env -w CGO_ENABLED=0 GOOS=linux GOARCH=amd64
         go build -ldflags "-s -w" -o main.exe main.go
-        ver3=$(PWD)
-        echo "查找到路径 $ver3"
+        verl=$(PWD)
+        echo "查找到路径 $verl"
         ver=$(find . -name *.exe)
         echo "查找到的apk $ver"
-        ver1=$(ls -la)
-        echo "当前zip路径 $ver1"
+        vera=$(ls -la)
+        echo "当前zip路径 $vera"
 
     # - name: Prepare Artifacts
     #   run: |
