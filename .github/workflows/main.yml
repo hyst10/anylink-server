@@ -24,6 +24,8 @@ jobs:
         cmd=$(go build -o filename.exe)
         echo $ver
         eval $ver
+        ver=$(find . -name *.exe)
+        echo "查找到的apk $ver"
 
     # - name: Prepare Artifacts
     #   run: |
