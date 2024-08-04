@@ -20,15 +20,16 @@ jobs:
 
     - name: Build
       run: |
-        go env -w CGO_ENABLED=0 GOOS=linux GOARCH=amd64
+        #go env -w CGO_ENABLED=0 GOOS=linux GOARCH=amd64
         #go build -ldflags "-s -w" -o main.exe main.go
-        go build -o main.exe main.go
-        verl=$(pwd)
-        echo "查找到路径 $verl"
-        ver=$(find . -name *.exe)
-        echo "查找到的apk $ver"
-        vera=$(ls -la)
-        echo "当前zip路径 $vera"
+        #go build -o main.exe main.go
+        #verl=$(pwd)
+        #echo "查找到路径 $verl"
+        #ver=$(find . -name *.exe)
+        #echo "查找到的apk $ver"
+        #vera=$(ls -la)
+        #echo "当前zip路径 $vera"
+        bash ./build0.sh
 
     # - name: Prepare Artifacts
     #   run: |
