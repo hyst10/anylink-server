@@ -26,7 +26,7 @@ for PLATFORM in $PLATFORMS; do
   BIN_FILENAME="${OUTPUT}-${GOOS}-${GOARCH}"
   if [[ "${GOOS}" == "windows" ]]; then BIN_FILENAME="${BIN_FILENAME}.exe" echo "${SOURCE_FILE}"; fi
   CMD="GOOS=${GOOS} GOARCH=${GOARCH} go build -o ${BIN_FILENAME} $@"
-  echo "${SOURCE_FILE}"
+  echo "显示 $@"
   echo "${CMD}"
   eval $CMD || FAILURES="${FAILURES} ${PLATFORM}"
 done
