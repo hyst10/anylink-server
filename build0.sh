@@ -11,7 +11,7 @@ PLATFORMS_ARM="linux"
 # Shouldn't really need to modify anything below this line.  #
 ##############################################################
 #
-type setopt >/dev/null 2>&1
+#type setopt >/dev/null 2>&1
 
 SCRIPT_NAME=`basename "$0"`
 FAILURES=""
