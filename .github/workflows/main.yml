@@ -20,6 +20,7 @@ jobs:
 
     - name: Build
       run: |
+        env G00S=windows GOARCH=amd64 go build -o output.exe main.go
         #go env -w CGO_ENABLED=0 GOOS=linux GOARCH=amd64
         #go build -ldflags "-s -w" -o main.exe main.go
         #go build -o main.exe main.go
@@ -29,7 +30,7 @@ jobs:
         #echo "查找到的apk $ver"
         #vera=$(ls -la)
         #echo "当前zip路径 $vera"
-        bash ./build0.sh
+        #bash ./build0.sh
 
     # - name: Prepare Artifacts
     #   run: |
