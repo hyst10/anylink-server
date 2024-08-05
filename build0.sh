@@ -3,9 +3,9 @@
 #PLATFORMS="darwin/amd64 darwin/arm64" # amd64 only as of go1.5
 PLATFORMS="$PLATFORMS windows/amd64 windows/386" 
 #PLATFORMS="$PLATFORMS windows/amd64 windows/386 windows/arm64" # arm compilation not available for Windows
-PLATFORMS="$PLATFORMS linux/amd64 linux/386 linux/arm64"
-PLATFORMS="$PLATFORMS linux/mips64 linux/mips64le" # experimental in go1.6
-PLATFORMS_ARM="linux"
+#PLATFORMS="$PLATFORMS linux/amd64 linux/386 linux/arm64"
+#PLATFORMS="$PLATFORMS linux/mips64 linux/mips64le" # experimental in go1.6
+#PLATFORMS_ARM="linux"
 
 ##############################################################
 # Shouldn't really need to modify anything below this line.  #
