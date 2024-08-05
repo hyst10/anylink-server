@@ -24,8 +24,8 @@ for PLATFORM in $PLATFORMS; do
   GOARCH=${PLATFORM#*/}
   #CGO_ENABLED=0
   BIN_FILENAME="${OUTPUT}-${GOOS}-${GOARCH}"
-  if [[ "${GOOS}" == "windows" ]]; then BIN_FILENAME="${BIN_FILENAME}.exe" echo "${SOURCE_FILE}"; fi
-  CMD="GOOS=${GOOS} GOARCH=${GOARCH} go build -o ${BIN_FILENAME} $@"
+  if [[ "${GOOS}" == "windows" ]]; then BIN_FILENAME="${BIN_FILENAME}.exe"; fi
+  CMD="GOOS=${GOOS} GOARCH=${GOARCH} go build -o ${BIN_FILENAME} main.go"
   echo "显示 $@"
   echo "显示 ${SOURCE_FILE/*}"
   echo "${CMD}"
