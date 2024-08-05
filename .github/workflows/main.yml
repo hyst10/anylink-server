@@ -26,10 +26,10 @@ jobs:
         #go build -o main.exe main.go
         #verl=$(pwd)
         #echo "查找到路径 $verl"
-        #ver=$(find . -name *.exe)
-        #echo "查找到的apk $ver"
-        #vera=$(ls -la)
-        #echo "当前zip路径 $vera"
+        ver=$(find . -name *.exe)
+        echo "查找到的apk $ver"
+        vera=$(ls -la)
+        echo "当前zip路径 $vera"
         #bash ./build0.sh
 
     # - name: Prepare Artifacts
